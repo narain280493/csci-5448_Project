@@ -42,7 +42,10 @@
             android:label="@string/title_activity_savedjobs" />
         <activity
             android:name=".PostopportunitiesActivity"
-            android:label="@string/title_activity_postopportunities"></activity>
+            android:label="@string/title_activity_postopportunities" />
+        <activity
+            android:name=".PostedjobsActivity"
+            android:label="@string/title_activity_postedjobs"></activity>
     </application>
 
 </manifest>

@@ -14,7 +14,7 @@ public class SearchActivity extends AppCompatActivity {
 
     private EditText keyword, minpay, maxpay;
     private CheckBox checkboxoncampusjobs,checkboxstudentopportunities;
-    private Button search,appliedjobs,savedjobs,postjobs;
+    private Button search,appliedjobs,savedjobs,postjobs,postedjobs;
     private String email;
 
 
@@ -35,15 +35,12 @@ public class SearchActivity extends AppCompatActivity {
         checkboxstudentopportunities = (CheckBox) findViewById(R.id.checkBoxstudentcreatedopportunities);
 
         appliedjobs =(Button) findViewById(R.id.buttonappliedjobs);
-      //appliedjobs.setOnClickListener(onClickListener);
         savedjobs =(Button) findViewById(R.id.buttonsavedjobs);
-        //savedjobs.setOnClickListener(onClickListener);
         postjobs = (Button) findViewById(R.id.buttonpostjobs);
-        //postjobs.setOnClickListener(onClickListener);
-
+        postedjobs = (Button) findViewById(R.id.buttonpostedjobs);
 
         search = (Button) findViewById(R.id.buttonsearch);
-        //search.setOnClickListener(onClickListener);
+
 
 
        search.setOnClickListener( new OnClickListener() {
@@ -123,63 +120,22 @@ public class SearchActivity extends AppCompatActivity {
             }
         });
 
-    }
+
+        postedjobs.setOnClickListener( new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
 
 
-
-  /* private  OnClickListener onClickListener = new OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-            switch(v.getId()){
-
-
-                case R.id.buttonsearch:
-                    Intent myIntent = new Intent(SearchActivity.this, SearchdetailActivity.class);
-                    myIntent.putExtra("keyword", keyword.getText().toString());
-                    myIntent.putExtra("minpay", minpay.getText().toString());
-                    myIntent.putExtra("maxpay", maxpay.getText().toString());
-                    if(checkboxoncampusjobs.isChecked())
-                    {
-                        myIntent.putExtra("checkboxoncampusjobs", "true");
-                    }
-                    else{
-                        myIntent.putExtra("checkboxoncampusjobs", "false");
-                    }
-
-                    if(checkboxstudentopportunities.isChecked())
-                    {
-                        myIntent.putExtra("checkboxstudentopportunities", "true");
-                    }
-                    else{
-                        myIntent.putExtra("checkboxstudentopportunities", "false");
-                    }
-
-                    startActivity(myIntent);
-
-                case R.id.buttonappliedjobs:
-                    Intent appliedintent = new Intent(SearchActivity.this, AppliedjobActivity.class);
-                    appliedintent.putExtra("email", email);
-                    startActivity(appliedintent);
-
-
-                case R.id.buttonsavedjobs:
-                    Intent savedintent = new Intent(SearchActivity.this, SavedjobsActivity.class);
-                    savedintent.putExtra("email", email);
-                    startActivity(savedintent);
-
-
-                case R.id.buttonpostjobs:
-                    Intent postintent = new Intent(SearchActivity.this, PostopportunitiesActivity.class);
-                    postintent.putExtra("email", email);
-                    startActivity(postintent);
-
+                Intent postintent = new Intent(SearchActivity.this, PostedjobsActivity.class);
+                postintent.putExtra("email", email);
+                startActivity(postintent);
 
             }
+        });
 
+    }
 
-        }
-    };*/
 
 
 }
