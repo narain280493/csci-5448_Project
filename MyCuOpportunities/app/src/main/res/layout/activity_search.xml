@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mycuoppnew.mycuoppnew2.SearchActivity"
+    android:background="#050404">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/buttonsearch1"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/buttonprofile"
+        android:layout_below="@+id/buttonsearch1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applied"
+        android:id="@+id/buttonappliedjobs"
+        android:layout_below="@+id/buttonprofile"
+        android:layout_alignRight="@+id/buttonprofile"
+        android:layout_alignEnd="@+id/buttonprofile"
+        android:background="@drawable/shape"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved"
+        android:id="@+id/buttonsavedjobs"
+        android:layout_below="@+id/buttonappliedjobs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/buttonpostjobs"
+        android:layout_below="@+id/buttonsavedjobs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted"
+        android:id="@+id/buttonpostedjobs"
+        android:layout_below="@+id/buttonpostjobs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alerts"
+        android:id="@+id/buttonalerts"
+        android:layout_above="@+id/buttonprofile"
+        android:layout_marginBottom="43dp"
+        android:layout_alignRight="@+id/buttonsearch1"
+        android:layout_alignEnd="@+id/buttonsearch1"
+        android:background="@drawable/shape"
+        android:clickable="true"
+
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonsearch1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#cb9800">
+
+        <EditText
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/keyword"
+            android:hint="Search Keyword"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#928888" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Campus Jobs"
+            android:id="@+id/checkBoxoncampusjobs"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Created Opportunities"
+            android:id="@+id/checkBoxstudentcreatedopportunities"
+            android:checked="false" />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/minpay"
+            android:hint="Min Pay"
+           />
+
+        <EditText
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/maxpay"
+            android:hint="Max Pay"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/buttonsearch"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:gravity="center_horizontal"
+    android:orientation="vertical"  tools:context=".LoginActivity"
+    android:background="#030303">
+
+
+
+
+
+    <EditText android:id="@+id/email" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:hint="Email"
+        android:inputType="textEmailAddress" android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:autoText="false"
+        android:background="#fffefe"
+        android:layout_alignRight="@+id/sign_in"
+        android:layout_alignEnd="@+id/sign_in" />
+
+    <EditText android:id="@+id/password" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:maxLines="1" android:singleLine="true"
+        android:layout_above="@+id/sign_in"
+        android:layout_alignLeft="@+id/sign_in"
+        android:layout_alignStart="@+id/sign_in"
+        android:layout_marginBottom="37dp"
+        android:background="#fffefe"
+        android:layout_alignRight="@+id/sign_in"
+        android:layout_alignEnd="@+id/sign_in" />
+
+    <Button android:id="@+id/sign_in"
+        android:layout_width="182dp" android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_above="@+id/register"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_register"
+        android:id="@+id/register"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/mycuoppotunities"
+        android:layout_above="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp" />
+
+</RelativeLayout>
