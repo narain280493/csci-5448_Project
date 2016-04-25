@@ -93,6 +93,23 @@ public class SearchActivity extends AppCompatActivity {
         });
 
 
+        profile.setOnClickListener( new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+
+
+                Intent profileintent = new Intent(SearchActivity.this, ProfileActivity.class);
+                profileintent.putExtra("email", email);
+
+
+                startActivity(profileintent);
+
+            }
+        });
+
+
 
         savedjobs.setOnClickListener( new OnClickListener() {
 
