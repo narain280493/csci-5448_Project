@@ -90,8 +90,10 @@
         android:id="@+id/postedby"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout2"
-        android:layout_above="@+id/buttonsave" />
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignRight="@+id/buttonapply"
+        android:layout_alignEnd="@+id/buttonapply"
+        android:layout_below="@+id/linearLayout2" />
 
     <EditText
         android:layout_width="wrap_content"

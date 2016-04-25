@@ -14,7 +14,7 @@ public class SearchActivity extends AppCompatActivity {
 
     private EditText keyword, minpay, maxpay;
     private CheckBox checkboxoncampusjobs,checkboxstudentopportunities;
-    private Button search,appliedjobs,savedjobs,postjobs,postedjobs;
+    private Button search,appliedjobs,savedjobs,postjobs,postedjobs,profile;
     private String email;
 
 
@@ -38,6 +38,7 @@ public class SearchActivity extends AppCompatActivity {
         savedjobs =(Button) findViewById(R.id.buttonsavedjobs);
         postjobs = (Button) findViewById(R.id.buttonpostjobs);
         postedjobs = (Button) findViewById(R.id.buttonpostedjobs);
+        profile = (Button) findViewById(R.id.buttonprofile);
 
         search = (Button) findViewById(R.id.buttonsearch);
 

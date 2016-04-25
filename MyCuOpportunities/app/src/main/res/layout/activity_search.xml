@@ -78,20 +78,6 @@
         android:background="@drawable/shape"
         android:clickable="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alerts"
-        android:id="@+id/buttonalerts"
-        android:layout_above="@+id/buttonprofile"
-        android:layout_marginBottom="43dp"
-        android:layout_alignRight="@+id/buttonsearch1"
-        android:layout_alignEnd="@+id/buttonsearch1"
-        android:background="@drawable/shape"
-        android:clickable="true"
-
-        android:singleLine="false" />
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

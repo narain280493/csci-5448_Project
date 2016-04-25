@@ -73,6 +73,7 @@ public class jobdetail extends AppCompatActivity {
         final List<Map<String, String>> joblist = new ArrayList<Map<String, String>>();
         requestQueue = Volley.newRequestQueue(this);
         requestQueue1 = Volley.newRequestQueue(this);
+        requestQueue2 = Volley.newRequestQueue(this);
 
 
 
