@@ -69,6 +69,7 @@
         android:id="@+id/buttonpost1"
         android:layout_marginTop="62dp"
         android:layout_alignTop="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
 
 </RelativeLayout>

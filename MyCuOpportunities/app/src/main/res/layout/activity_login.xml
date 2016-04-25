@@ -17,7 +17,7 @@
         android:layout_alignLeft="@+id/password"
         android:layout_alignStart="@+id/password"
         android:autoText="false"
-        android:background="#fffefe"
+        android:background="#FFF2AE31"
         android:layout_alignRight="@+id/sign_in"
         android:layout_alignEnd="@+id/sign_in" />
 
@@ -29,7 +29,7 @@
         android:layout_alignLeft="@+id/sign_in"
         android:layout_alignStart="@+id/sign_in"
         android:layout_marginBottom="37dp"
-        android:background="#fffefe"
+        android:background="#FFF2AE31"
         android:layout_alignRight="@+id/sign_in"
         android:layout_alignEnd="@+id/sign_in" />
 
@@ -37,7 +37,8 @@
         android:layout_width="182dp" android:layout_height="wrap_content"
         android:text="SIGN IN"
         android:layout_above="@+id/register"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#fffffe" />
 
     <Button
         android:layout_width="wrap_content"

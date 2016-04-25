@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
     private Button register;
     private RequestQueue requestQueue;
   private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/login.php";
-    //private String URL="";
     private StringRequest request;
 
     @Override
@@ -43,9 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
         sign_in = (Button) findViewById(R.id.sign_in);
         register = (Button) findViewById(R.id.register);
-       /* URL = String.format("http://10.0.2.2:8888/mycuoppnew2/login.php?email=%1$s&password=%2$s",
-                email,
-                password);*/
+
 
         requestQueue = Volley.newRequestQueue(this);
 

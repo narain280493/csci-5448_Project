@@ -10,27 +10,16 @@
     tools:context="com.mycuoppnew.mycuoppnew2.RegisterActivity"
     android:background="#020202">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="124dp"
-        android:id="@+id/linearLayout">
-
-    </LinearLayout>
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/firstname"
         android:hint="First Name"
-        android:background="#ffffff"
-        android:layout_above="@+id/lastname"
+        android:background="#FFF2AE31"
+        android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/lastname"
         android:layout_alignStart="@+id/lastname"
-        android:layout_marginBottom="37dp"
+        android:layout_marginTop="100dp"
         android:layout_alignRight="@+id/lastname"
         android:layout_alignEnd="@+id/lastname" />
 
@@ -39,10 +28,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/lastname"
         android:hint="Last Name"
-        android:background="#FFFFFFFF"
-        android:layout_below="@+id/linearLayout"
+        android:background="#FFF2AE31"
         android:layout_alignLeft="@+id/email"
         android:layout_alignStart="@+id/email"
+        android:layout_marginTop="150dp"
         android:layout_alignRight="@+id/email"
         android:layout_alignEnd="@+id/email" />
 
@@ -53,11 +42,12 @@
         android:hint="Email "
         android:ems="10"
         android:id="@+id/email"
-        android:background="#FFFFFFFF"
-        android:layout_marginBottom="40dp"
+        android:background="#FFF2AE31"
+        android:layout_marginBottom="30dp"
         android:layout_above="@+id/password"
         android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_alignStart="@+id/password"
+        android:layout_marginTop="180dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -78,7 +68,7 @@
         android:id="@+id/password"
         android:layout_gravity="center_horizontal"
         android:autoText="false"
-        android:background="#FFFFFFFF"
+        android:background="#FFF2AE31"
         android:clickable="false"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

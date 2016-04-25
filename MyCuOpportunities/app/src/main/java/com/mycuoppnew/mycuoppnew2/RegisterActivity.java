@@ -25,7 +25,7 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText email, password, firstname, lastname;
-    private Button sign_in;
+private String email1;
     private Button register;
     private RequestQueue requestQueue;
     private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/register.php";
@@ -55,7 +55,10 @@ public class RegisterActivity extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             if (jsonObject.names().get(0).equals("success")) {
                                 Toast.makeText(getApplicationContext(), "SUCCESS " + jsonObject.getString("success"), Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), Welcome.class));
+                                Intent i = new Intent(getApplicationContext(), SearchActivity.class);
+                                email1 =  email.getText().toString();
+                                i.putExtra("email", email1);
+                                startActivity(i);
                             } else {
                                 Toast.makeText(getApplicationContext(), "Error: " + jsonObject.getString("error"), Toast.LENGTH_SHORT).show();
                             }
