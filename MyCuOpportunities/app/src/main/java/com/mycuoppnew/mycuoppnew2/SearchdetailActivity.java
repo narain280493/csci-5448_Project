@@ -31,14 +31,13 @@ public class SearchdetailActivity extends ListActivity {
     private String keyword, minpay, maxpay;
     private String checkboxoncampusjobs, checkboxstudentopportunities;
     private RequestQueue requestQueue;
-    // private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/search.php";
     private StringRequest request;
     private String jobname = "";
     private String jobdesc = "";
     private String jobid = "";
     private String job_posted_date="";
     private String job_type="";
-    private String job_pay="";
+    private String job_pay,email;
     private ListView listView;
 
 
@@ -54,6 +53,7 @@ public class SearchdetailActivity extends ListActivity {
         keyword = bundle.getString("keyword");
         minpay = bundle.getString("minpay");
         maxpay = bundle.getString("maxpay");
+        email = bundle.getString("email");
         checkboxoncampusjobs = bundle.getString("checkboxoncampusjobs");
         checkboxstudentopportunities = bundle.getString("checkboxstudentopportunities");
       // editViewresult = (EditText) findViewById(R.id.editText);
@@ -126,6 +126,7 @@ public class SearchdetailActivity extends ListActivity {
                 String newsplit =jobdetail1.split(" ")[0].split(":")[1];
                 Intent i = new Intent(getApplicationContext(), jobdetail.class);
                 i.putExtra("jobid", newsplit);
+                i.putExtra("emailuser", email);
                 startActivity(i);
 
 

@@ -51,6 +51,7 @@ public class SearchActivity extends AppCompatActivity {
                 myIntent.putExtra("keyword", keyword.getText().toString());
                 myIntent.putExtra("minpay", minpay.getText().toString());
                 myIntent.putExtra("maxpay", maxpay.getText().toString());
+                myIntent.putExtra("email", email);
                if(checkboxoncampusjobs.isChecked())
                {
                    myIntent.putExtra("checkboxoncampusjobs", "true");
