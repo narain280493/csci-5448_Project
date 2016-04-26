@@ -91,9 +91,7 @@ include_once 'connection.php';
 				$query = "select * from jobs where job_name like '%".$jobname."%'and pay>=$minpay and pay<=$maxpay" ;
 				$result = mysqli_query($this -> connection, $query);
 				$json = array();
-
- 
-			
+		
 
 			if(mysqli_num_rows($result)){
 				while($row=mysqli_fetch_assoc($result)){
@@ -107,16 +105,12 @@ include_once 'connection.php';
 
 			}
 
+}
 
 
 }
 
-
-
-}
-
-
-		
+	
 	
 	$user = new User();
 	
@@ -135,7 +129,7 @@ include_once 'connection.php';
 	{
 		$maxpay=10000;
 	}
-	//echo $checkboxoncampusjobs;
+
 
 	$user-> does_user_exist($jobname,$minpay,$maxpay,$checkboxoncampusjobs,$checkboxstudentopportunities);
 			

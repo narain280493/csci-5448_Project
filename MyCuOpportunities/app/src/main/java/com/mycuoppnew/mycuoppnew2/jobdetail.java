@@ -138,7 +138,7 @@ public class jobdetail extends AppCompatActivity {
                             if (jsonObject.names().get(0).equals("success")) {
                                 Toast.makeText(getApplicationContext()," "+jsonObject.getString("success"),Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(getApplicationContext(), SearchActivity.class);
-                                  i.putExtra("email", email);
+                                  i.putExtra("email", emailuser);
                                      startActivity(i);
 
                             } else {

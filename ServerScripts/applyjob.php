@@ -17,8 +17,7 @@ include_once 'connection.php';
 			$result1 = mysqli_query($this->connection, $query1);
 			$row = mysqli_fetch_assoc($result1);
 			$userid=$row['user_id'];
-			//echo $email;
-			//echo $job_id;
+
 
 			$query = "Insert into appliedjobs (user_id,job_id) values ('$userid','$job_id')";
 			$result = mysqli_query($this->connection, $query);
@@ -33,18 +32,6 @@ include_once 'connection.php';
 				mysqli_close($this->connection);
 
 
-/*
-
-			if(mysqli_num_rows($result)>0){
-				$json['success'] = ' Welcome '.$email;
-				echo json_encode($json);
-				mysqli_close($this -> connection);
-			}else{
-				$json['error'] = ' Please check your credentials or Register ';
-				echo json_encode($json);
-				mysqli_close($this -> connection);	mysqli_close($this -> connection);
-			}
-			*/
 		}
 		
 	}
