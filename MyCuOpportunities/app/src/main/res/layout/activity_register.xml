@@ -64,13 +64,14 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="80dip"
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:id="@+id/register"
         android:layout_marginTop="46dp"
         android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
 
     <ImageView
         android:layout_width="wrap_content"

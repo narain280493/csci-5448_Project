@@ -90,6 +90,7 @@
         android:autoText="false"
         android:background="#d1a449"
         android:layout_toRightOf="@+id/jobpay"
+        android:layout_toLeftOf="@+id/jobname1"
         android:layout_below="@+id/linearLayout2"
         android:layout_toStartOf="@+id/buttonsave"
         android:layout_above="@+id/buttonapply"
@@ -105,5 +106,15 @@
         android:background="#d1a449"
         android:layout_below="@+id/jobpay"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/postedby"
+        android:layout_alignRight="@+id/buttonsave"
+        android:textColor="#d1a449"
+        android:layout_above="@+id/jobdesc"
+        android:layout_below="@+id/dateposted" />
 
 </RelativeLayout>

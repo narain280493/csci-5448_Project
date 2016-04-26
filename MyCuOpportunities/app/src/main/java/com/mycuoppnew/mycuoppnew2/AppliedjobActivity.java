@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -26,17 +25,10 @@ import java.util.Map;
 
 public class AppliedjobActivity extends ListActivity {
 
-
-    private String email;
-    private TextView emailv;
     private RequestQueue requestQueue;
     private StringRequest request;
-    private String jobname = "";
-    private String jobdesc = "";
-    private String jobid = "";
-    private String job_posted_date="";
-    private String job_type="";
-    private String job_pay="";
+    private String email,jobname,jobid,job_posted_date,job_type,job_pay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

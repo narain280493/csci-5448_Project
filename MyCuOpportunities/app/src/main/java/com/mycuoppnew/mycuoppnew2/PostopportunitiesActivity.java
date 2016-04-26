@@ -24,7 +24,6 @@ import java.util.Map;
 
 public class PostopportunitiesActivity extends AppCompatActivity {
 
-    private String jobname, jobpay, jobdesc;
     private EditText jobnameet,jobpayet,jobdescet;
     private Button postjob;
     private RequestQueue requestQueue;
@@ -36,12 +35,9 @@ public class PostopportunitiesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_postopportunities);
         jobnameet = (EditText) findViewById(R.id.jobname1);
-        //jobname = jobnameet.getText().toString();
-
         jobpayet = (EditText) findViewById(R.id.jobpay1);
-        //jobpay = jobpayet.getText().toString();
         jobdescet = (EditText) findViewById(R.id.jobdesc1);
-        //jobdesc = jobdescet.getText().toString();
+
 
 
 

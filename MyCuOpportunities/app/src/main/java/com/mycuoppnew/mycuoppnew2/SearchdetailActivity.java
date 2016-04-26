@@ -32,16 +32,7 @@ public class SearchdetailActivity extends ListActivity {
     private String checkboxoncampusjobs, checkboxstudentopportunities;
     private RequestQueue requestQueue;
     private StringRequest request;
-    private String jobname = "";
-    private String jobdesc = "";
-    private String jobid = "";
-    private String job_posted_date="";
-    private String job_type="";
-    private String job_pay,email;
-    private ListView listView;
-
-
-
+    private String jobname,jobid,job_posted_date,job_type,job_pay,email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +47,6 @@ public class SearchdetailActivity extends ListActivity {
         email = bundle.getString("email");
         checkboxoncampusjobs = bundle.getString("checkboxoncampusjobs");
         checkboxstudentopportunities = bundle.getString("checkboxstudentopportunities");
-      // editViewresult = (EditText) findViewById(R.id.editText);
-       // listView = (ListView) findViewById(R.id.listView);
        final  ListView listView = getListView();
         String URL = "http://10.0.2.2:8888/mycuoppnew2/search.php?keyword="+keyword+"&minpay="+minpay+"&maxpay="+maxpay+"&checkboxoncampusjobs="+checkboxoncampusjobs+"&checkboxstudentopportunities="+checkboxstudentopportunities;
         final List<Map<String, String>> joblist = new ArrayList<Map<String, String>>();
@@ -115,13 +104,9 @@ public class SearchdetailActivity extends ListActivity {
 
         requestQueue.add(request);
 
-        //ListView listView = getListView();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //HashMap<String, Object> obj = (HashMap<String, Object>) adapter.getItem(position);
-                // String name = (String) obj.get("name");
-                // Log.d("Yourtag", name);
                 String jobdetail1 = ((TextView) view).getText().toString();
                 String newsplit =jobdetail1.split(" ")[0].split(":")[1];
                 Intent i = new Intent(getApplicationContext(), jobdetail.class);

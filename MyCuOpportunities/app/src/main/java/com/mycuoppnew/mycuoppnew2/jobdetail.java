@@ -29,36 +29,24 @@ import java.util.Map;
 
 public class jobdetail extends AppCompatActivity {
     private String job_id;
-    private String id;
     private RequestQueue requestQueue,requestQueue1,requestQueue2;
     private TextView jobnamev,jobpayv,posteddatev,jobdescv,jobtypev,postedbyv;
     private StringRequest request,request1,request2;
-    private String jobname = "";
-    private String jobdesc = "";
-    private String jobid = "";
-    private String job_posted_date="";
-    private String job_type="";
-    private String job_pay="";
-    private  String firstname="";
-    private  String email="";
-    private  String emailuser="";
+    private String jobname,jobdesc,job_posted_date,job_type,job_pay,email,emailuser,postedby;
     private Button apply,save;
     private Intent emailIntent;
     private EditText usermessage;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jobdetail);
         jobnamev = (TextView) findViewById(R.id.jobname1);
+        postedbyv = (TextView) findViewById(R.id.postedby);
         jobdescv = (TextView) findViewById(R.id.jobdesc);
         jobpayv = (TextView) findViewById(R.id.jobpay);
         posteddatev = (TextView) findViewById(R.id.dateposted);
         jobtypev = (TextView) findViewById(R.id.jobtype);
-        //postedbyv = (TextView) findViewById(R.id.postedby);
         apply = (Button) findViewById(R.id.buttonapply);
         save = (Button) findViewById(R.id.buttonsave);
         usermessage = (EditText) findViewById(R.id.usermessage);
@@ -172,7 +160,6 @@ public class jobdetail extends AppCompatActivity {
 
                 requestQueue2.add(request2);
 
-
             }
 
 
@@ -189,14 +176,13 @@ public class jobdetail extends AppCompatActivity {
 
 
                         JSONObject jobdata = searchresult.getJSONObject(i);
-                        jobid = jobdata.getString("job_id");
                         jobname = jobdata.getString("job_name");
                         jobdesc = jobdata.getString("job_description");
                         job_posted_date = jobdata.getString("job_posted_date");
                         job_type = jobdata.getString("job_type");
                         job_pay = jobdata.getString("pay");
-                        firstname = jobdata.getString("Firstname");
                         email = jobdata.getString("email");
+                        postedby = jobdata.getString("Firstname");
 
                     }
 
@@ -210,11 +196,7 @@ public class jobdetail extends AppCompatActivity {
                 jobpayv.setText("$"+job_pay+"/hour");
                 posteddatev.setText(job_posted_date);
                 jobtypev.setText(job_type);
-               // postedbyv.setText("Posted By "+firstname+".");
-
-
-
-
+                postedbyv.setText("Posted By:"+postedby);
 
             }
         }, new Response.ErrorListener() {

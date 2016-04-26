@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button sign_in;
     private TextView register;
     private RequestQueue requestQueue;
-  private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/login.php";
+    private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/login.php";
     private StringRequest request;
 
     @Override
@@ -62,7 +62,6 @@ public class LoginActivity extends AppCompatActivity {
                                 email1 =  email.getText().toString();
                                 i.putExtra("email", email1);
                                 startActivity(i);
-                               // startActivity(new Intent(getApplicationContext(),SearchActivity.class));
                             }else {
                                 Toast.makeText(getApplicationContext(), "Error: " +jsonObject.getString("error"), Toast.LENGTH_SHORT).show();
                             }
@@ -84,8 +83,6 @@ public class LoginActivity extends AppCompatActivity {
                         HashMap<String,String> hashMap = new HashMap<String, String>();
                         hashMap.put("email",email.getText().toString());
                         hashMap.put("password",password.getText().toString());
-                       // hashMap.put("firstname",password.getText().toString());
-
                         return hashMap;
                     }
                 };

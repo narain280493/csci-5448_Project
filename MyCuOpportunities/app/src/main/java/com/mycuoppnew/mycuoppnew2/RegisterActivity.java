@@ -25,7 +25,7 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText email, password, firstname, lastname;
-private String email1;
+    private String email1;
     private Button register;
     private RequestQueue requestQueue;
     private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/register.php";
@@ -39,7 +39,6 @@ private String email1;
         lastname = (EditText) findViewById(R.id.lastname);
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
-        //sign_in = (Button) findViewById(R.id.sign_in);
         register = (Button) findViewById(R.id.register);
 
         requestQueue = Volley.newRequestQueue(this);
@@ -55,7 +54,7 @@ private String email1;
                             JSONObject jsonObject = new JSONObject(response);
                             if (jsonObject.names().get(0).equals("success")) {
                                 Toast.makeText(getApplicationContext(), "SUCCESS " + jsonObject.getString("success"), Toast.LENGTH_SHORT).show();
-                                Intent i = new Intent(getApplicationContext(), SearchActivity.class);
+                                Intent i = new Intent(getApplicationContext(),LoginActivity.class);
                                 email1 =  email.getText().toString();
                                 i.putExtra("email", email1);
                                 startActivity(i);

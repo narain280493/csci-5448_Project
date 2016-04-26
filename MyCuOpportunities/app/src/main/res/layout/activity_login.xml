@@ -39,13 +39,14 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="86dip"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/sign_in"
         android:layout_marginTop="35dp"
         android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
 
     <EditText
         android:layout_width="wrap_content"
