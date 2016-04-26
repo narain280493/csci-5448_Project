@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/firstname"
-        android:textColor="#f4c135"
+        android:textColor="#d1a449"
         android:layout_below="@+id/imageView2"
         android:textSize="25dip"
         android:textStyle="bold|italic" />
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/email"
         android:layout_marginTop="31dp"
-        android:textColor="#f4c135"
+        android:textColor="#d1a449"
         android:textSize="25dip"
         android:textStyle="bold|italic"
         android:layout_alignParentRight="true"

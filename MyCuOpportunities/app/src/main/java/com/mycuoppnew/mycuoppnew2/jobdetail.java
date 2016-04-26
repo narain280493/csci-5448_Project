@@ -58,7 +58,7 @@ public class jobdetail extends AppCompatActivity {
         jobpayv = (TextView) findViewById(R.id.jobpay);
         posteddatev = (TextView) findViewById(R.id.dateposted);
         jobtypev = (TextView) findViewById(R.id.jobtype);
-        postedbyv = (TextView) findViewById(R.id.postedby);
+        //postedbyv = (TextView) findViewById(R.id.postedby);
         apply = (Button) findViewById(R.id.buttonapply);
         save = (Button) findViewById(R.id.buttonsave);
         usermessage = (EditText) findViewById(R.id.usermessage);
@@ -210,7 +210,7 @@ public class jobdetail extends AppCompatActivity {
                 jobpayv.setText("$"+job_pay+"/hour");
                 posteddatev.setText(job_posted_date);
                 jobtypev.setText(job_type);
-                postedbyv.setText("Posted By "+firstname+".");
+               // postedbyv.setText("Posted By "+firstname+".");
 
 
 

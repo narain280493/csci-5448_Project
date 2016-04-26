@@ -86,7 +86,7 @@
         android:layout_toRightOf="@+id/buttonsearch1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#cb9800">
+        android:background="#d1a449">
 
         <EditText
             android:layout_width="204dp"

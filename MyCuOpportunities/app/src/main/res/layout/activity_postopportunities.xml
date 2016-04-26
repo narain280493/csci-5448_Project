@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mycuoppnew.mycuoppnew2.PostopportunitiesActivity"
-    android:background="#cb9800">
+    android:background="#020202">
 
     <EditText
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false"
-        android:background="#fad978"
+        android:background="#d1a449"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="false" />
 
@@ -31,7 +31,7 @@
         android:ems="10"
         android:id="@+id/jobdesc1"
         android:hint="Enter the Job Description"
-        android:background="#fad978"
+        android:background="#d1a449"
         android:layout_below="@+id/jobname1"
         android:layout_marginTop="67dp"
         android:layout_alignParentRight="true"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/jobpay1"
         android:hint="$/Hour "
-        android:background="#fad978"
+        android:background="#d1a449"
         android:layout_below="@+id/jobname1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -60,7 +60,9 @@
         android:layout_marginBottom="156dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic"
+        android:textColor="#d1a449" />
 
     <Button
         android:layout_width="wrap_content"

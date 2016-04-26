@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mycuoppnew.mycuoppnew2.jobdetail"
-    android:background="#cb9800">
+    android:background="#000000">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,12 +19,6 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/linearLayout2">
 
-        <TextView
-            android:layout_width="281dp"
-            android:layout_height="match_parent"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/jobdesc"
-            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
     <TextView
@@ -36,7 +30,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/linearLayout2"
-        android:layout_alignEnd="@+id/linearLayout2" />
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:background="#d1a449" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +41,8 @@
         android:layout_below="@+id/jobname1"
         android:layout_alignRight="@+id/jobname1"
         android:layout_alignEnd="@+id/jobname1"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="35dp"
+        android:textColor="#d1a449" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +51,8 @@
         android:id="@+id/jobtype"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/dateposted" />
+        android:layout_alignTop="@+id/dateposted"
+        android:textColor="#d1a449" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,7 +61,8 @@
         android:id="@+id/jobpay"
         android:layout_below="@+id/jobtype"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#d1a449" />
 
     <Button
         android:layout_width="wrap_content"
@@ -84,25 +82,28 @@
         android:layout_alignRight="@+id/linearLayout2"
         android:layout_alignEnd="@+id/linearLayout2" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/postedby"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/linearLayout2"
-        android:layout_alignRight="@+id/buttonapply"
-        android:layout_alignEnd="@+id/buttonapply"
-        android:layout_below="@+id/linearLayout2" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/usermessage"
         android:hint="Type your message for the Recruiter"
-        android:layout_above="@+id/buttonsave"
-        android:layout_alignTop="@+id/postedby"
-        android:layout_toRightOf="@+id/postedby"
-        android:layout_alignRight="@+id/dateposted"
-        android:layout_alignEnd="@+id/dateposted" />
+        android:autoText="false"
+        android:background="#d1a449"
+        android:layout_toRightOf="@+id/jobpay"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/buttonsave"
+        android:layout_above="@+id/buttonapply"
+        android:layout_alignRight="@+id/jobdesc"
+        android:layout_alignEnd="@+id/jobdesc" />
+
+    <TextView
+        android:layout_width="281dp"
+        android:layout_height="154dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/jobdesc"
+        android:layout_gravity="center_horizontal"
+        android:background="#d1a449"
+        android:layout_below="@+id/jobpay"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

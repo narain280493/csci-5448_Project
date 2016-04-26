@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -28,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText email,password;
     private String email1;
     private Button sign_in;
-    private Button register;
+    private TextView register;
     private RequestQueue requestQueue;
   private static final String URL = "http://10.0.2.2:8888/mycuoppnew2/login.php";
     private StringRequest request;
@@ -41,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         sign_in = (Button) findViewById(R.id.sign_in);
-        register = (Button) findViewById(R.id.register);
+        register = (TextView) findViewById(R.id.register);
 
 
         requestQueue = Volley.newRequestQueue(this);

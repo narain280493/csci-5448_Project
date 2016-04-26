@@ -46,11 +46,6 @@ public class AppliedjobActivity extends ListActivity {
         Intent emailintent = getIntent();
         Bundle bundle = emailintent.getExtras();
         email = bundle.getString("email");
-
-       // emailv = (TextView) findViewById(R.id.email);
-        //emailv.setText(email);
-
-
         final ListView listView = getListView();
         String URL = "http://10.0.2.2:8888/mycuoppnew2/appliedjobs.php?email="+email;
         final List<Map<String, String>> joblist = new ArrayList<Map<String, String>>();
